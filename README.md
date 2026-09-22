@@ -1,4 +1,4 @@
-# 🚀 NovaSphere AI Core
+# 🚀 NovaSphere Core
 
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![ADK 1.6+](https://img.shields.io/badge/ADK-1.6.1-green.svg)](https://cloud.google.com/)
