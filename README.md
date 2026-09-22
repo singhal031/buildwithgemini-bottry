@@ -1,54 +1,56 @@
-# 🌤️ Simple Agent
+# 🚀 NovaSphere AI Core
 
-An AI assistant built with the Google Agent Development Kit (ADK) and `agents-cli`, powered by Vertex AI's `gemini-2.5-flash` model.
+[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
+[![ADK 1.6+](https://img.shields.io/badge/ADK-1.6.1-green.svg)](https://cloud.google.com/)
+[![Model](https://img.shields.io/badge/Model-Gemini%202.5%20Flash-orange.svg)](https://deepmind.google/technologies/gemini/)
+[![License](https://img.shields.io/badge/License-Apache%202.0-lightgrey.svg)](LICENSE)
 
-![Simple Agent Demo](demo.gif)
+An intelligent agent built with the **Google Agent Development Kit (ADK)** and `agents-cli`, powered by Vertex AI's **`gemini-2.5-flash`** model.
 
----
-
-## 🚀 Capabilities
-
-The agent is implemented in `app/agent.py` using Python ADK and includes the following function tools:
-
-- **Weather Inquiry (`get_weather`)**: Returns simulated weather report data for requested locations (e.g., San Francisco, New York).
-- **Timezone Resolution (`get_current_time`)**: Computes and formats real-time timestamps using `zoneinfo` for target cities.
-
-### 🌐 Google Cloud & ADK Integration
-- **Model**: `gemini-2.5-flash` via Vertex AI
-- **Framework**: Agent Development Kit (ADK)
-- **Deployment Target**: Agent Runtime (Agent Engine)
-
-*(Note: Features such as Memory Bank, Firestore, RAG Engine, Image Generation, and A2UI are not implemented in this repository).*
+![NovaSphere Demo](demo.gif)
 
 ---
 
-## 🛠️ Local Setup & Execution
+## 💡 Key Capabilities
 
-### 1. Prerequisites
-- Python 3.11+
-- `uv` package manager (`uv tool install google-agents-cli`)
-- Authenticated `gcloud` CLI
+NovaSphere Core provides real-time intelligent assistance equipped with four built-in tool modules:
 
-### 2. Environment Setup
-Set up the required environment variables:
+- **🌤️ Weather Telematics (`get_weather`)**: Structured weather data, humidity, and wind conditions across global cities.
+- **🕒 Global Timezone Engine (`get_current_time`)**: High-precision local timestamps with ISO timezone offsets using Python `zoneinfo`.
+- **💱 Currency Exchange Rates (`get_currency_exchange_rate`)**: Instant FX market conversion rates between major fiat currencies.
+- **📰 Tech News Feed (`get_tech_news`)**: Real-time developer highlights and AI ecosystem news summaries.
+
+### 🌐 Infrastructure & Stack
+- **AI Foundation**: Google GenAI SDK (`gemini-2.5-flash`) on Vertex AI
+- **Framework**: Agent Development Kit (ADK) & Agent Engine
+- **Deployment Target**: Google Cloud Agent Runtime
+
+---
+
+## 🛠️ Local Setup & Quickstart
+
+### 1. Environment Configuration
+Define your Vertex AI credentials:
 ```bash
 export GOOGLE_GENAI_USE_VERTEXAI=true
 export GOOGLE_CLOUD_PROJECT=<YOUR_GCP_PROJECT_ID>
 export GOOGLE_CLOUD_LOCATION=us-central1
 ```
 
-### 3. Install Dependencies
+### 2. Installation
+Install project dependencies with `agents-cli`:
 ```bash
 agents-cli install
 ```
 
-### 4. Run Tests
+### 3. Verification & Testing
+Execute the complete integration test suite:
 ```bash
 uv run pytest
 ```
 
-### 5. Launch the ADK Playground
-To launch the interactive agent playground locally:
+### 4. Interactive Playground
+Launch the local ADK Dev UI playground:
 ```bash
 agents-cli playground
 ```
