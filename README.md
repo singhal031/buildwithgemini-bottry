@@ -2,10 +2,10 @@
 
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![ADK 1.6+](https://img.shields.io/badge/ADK-1.6.1-green.svg)](https://cloud.google.com/)
-[![Model](https://img.shields.io/badge/Model-Gemini%202.5%20Flash-orange.svg)](https://deepmind.google/technologies/gemini/)
+[![Model](https://img.shields.io/badge/Model-Gemini%202.5%20Pro-orange.svg)](https://deepmind.google/technologies/gemini/)
 [![License](https://img.shields.io/badge/License-Apache%202.0-lightgrey.svg)](LICENSE)
 
-An intelligent agent built with the **Google Agent Development Kit (ADK)** and `agents-cli`, powered by Vertex AI's **`gemini-2.5-flash`** model.
+An intelligent agent built with the **Google Agent Development Kit (ADK)** and `agents-cli`, powered by Vertex AI's **`gemini-2.5-pro`** model.
 
 ![NovaSphere Demo](demo.gif)
 
