@@ -21,7 +21,7 @@ NovaSphere Core provides real-time intelligent assistance equipped with four bui
 - **📰 Tech News Feed (`get_tech_news`)**: Real-time developer highlights and AI ecosystem news summaries.
 
 ### 🌐 Infrastructure & Stack
-- **AI Foundation**: Google GenAI SDK (`gemini-2.5-flash`) on Vertex AI
+- **AI Foundation**: Google GenAI SDK (`gemini-2.5-pro`) on Vertex AI
 - **Framework**: Agent Development Kit (ADK) & Agent Engine
 - **Deployment Target**: Google Cloud Agent Runtime
 
